@@ -11,7 +11,10 @@
 let name="sanya"
 let age=20
 let isloggedin=false
+// decimal is also considered number
 
+
+//primitive:
 // number-range 2 power 53ish
 // bigint
 // string
@@ -20,7 +23,10 @@ let isloggedin=false
 // undefined->value is not defined
 // symbol->unique 
 
+//non primitive or refernced
 // object
+// arrays
+// functions
 
 console.log(typeof null) 
 // this gives object
@@ -68,3 +74,12 @@ console.log(2>1)
 
 // ===
 // this checks strictly and checks datatypes
+
+const id=symbol('123')
+const secondid=symbol('123')
+// these 2 are not the same
+
+// memory
+// stacks(primitive) and heaps(non-primitive)
+
+
