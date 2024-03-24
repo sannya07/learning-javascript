@@ -28,3 +28,18 @@ console.log(typeof null)
 console.log(typeof undefined)
 // this gives undefined only
 
+let score="33abc"
+console.log(typeof(score))
+
+let valueinnumber=Number(score)
+// similarly we can convert to string or boolean as well 
+console.log(typeof(valueinnumber))
+console.log(valueinnumber)
+// this gives NaN who has datatype number
+
+//"33"->33
+// "33abc"->NaN
+// true->1
+
+
+

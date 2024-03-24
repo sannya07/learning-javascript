@@ -15,4 +15,5 @@ console.table([accountId,accountEmail,accountPassword,accountcity,accountdata])
 
 //we do not use var anymore instead we use let as it overcomes the block scope issue
 
-
+let score=33
+console.log(typeof(score))
