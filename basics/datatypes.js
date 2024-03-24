@@ -41,5 +41,30 @@ console.log(valueinnumber)
 // "33abc"->NaN
 // true->1
 
+// operations
+let value=3
+let negvalue=-(value)
+console.log(negvalue)
+
+let str1="hello"
+let str2="world"
+let str3=str1+str2
+console.log(str3)
+// concat
 
 
+console.log("1"+2+2) //string
+console.log(1+2+"2") //number
+
+console.log(+true) //gives 1
+
+// check prefix and postfix values
+
+// comparisons
+console.log(2>1)
+// will give ans in true or false
+// datatypes should be the same
+// null is greater than or equal to zero
+
+// ===
+// this checks strictly and checks datatypes
