@@ -7,3 +7,7 @@ console.log(balance);
 console.log(balance.toString().length);
 // gives percission value eg in this case 100.000
 console.log(balance.toFixed(3));
+// and in this case 100.0
+console.log(balance.toFixed(1));
+
+
