@@ -43,3 +43,17 @@ console.log("C",arr2);
 console.log(n2);
 // in splice last range is included
 // in splice the orginal array is manipulated and we get everything other than the spliced elements
+
+const marvel=["thor","Ironman","Spiderman"];
+const dc=["superman","joker","batman"];
+marvel.push(dc);
+// this gives an array inside an array and it up
+console.log(marvel);
+console.log(marvel[3][1]);
+// this gives new array and it actually puts elements with comma seperation
+const all=marvel.concat(dc);
+console.log(all);
+
+const allnew=[...marvel,...dc];
+console.log(allnew);
+
