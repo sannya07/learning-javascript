@@ -57,3 +57,11 @@ console.log(all);
 const allnew=[...marvel,...dc];
 console.log(allnew);
 
+const anotherarray=[1,2,3,[4,5,6],7[6,7,[4,5]]];
+// this will return one single array
+const useable=anotherarray.flat(Infinity);
+console.log(useable);
+
+console.log(Array.isArray("sanya"));
+console.log(Array.from("sanya"));
+console.log(Array.from({name:"sanya"}));
