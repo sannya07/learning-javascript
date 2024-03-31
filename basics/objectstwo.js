@@ -73,3 +73,18 @@ console.log(Object.entries(tinderuser));
 
 
 console.log(tinderuser.hasOwnProperty('isloggedin'))
+
+// destructuring
+
+const course={
+    coursename:"js",
+    price:"990",
+    teacher:"hitesh"
+}
+// if we want to access this value we use
+// console.log(course.teacher);
+
+// but if we want to do it again and again then
+const{teacher:a}=course
+console.log(a);
+
