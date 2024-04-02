@@ -1,0 +1,44 @@
+->{}  -> global execution context as this
+in browser it is windows
+
+{}->memory creation phase 
+and execution phase
+
+
+->functional/function execution context
+->eval execution context
+
+
+let val1=10
+let val2=5
+func addnum(num1,num2){
+    let total=num1+num2
+    return total
+}
+let result1=addnum(val1,val2)
+let result2=addnum(10,2)
+
+first step when we run a code is its global execution inside this keyword
+second step is memory creation phase-> in this all the variables are collected znd stored
+val1->undefined
+val2->undefined
+addnum()->definition
+result1->undefined
+result2->undefined
+
+third is execution phase
+val1<---10
+val2<---5
+addnum<--------- new executional context-----> new variable environment+execution thread
+---------->memory phase->val1,val2,total-->undefined
+---------->num1->10 num2->5 total->15 
+
+
+total will be returned in global executional context
+then new executional phase is deleted
+addnum<--------- new executional context-----> new variable environment+execution thread
+---------->memory phase->val1,val2,total-->undefined
+---------->num1->10 num2->2 total->12
+
+total will be returned in global executional context
+then new executional phase is deleted
