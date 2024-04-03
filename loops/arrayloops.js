@@ -50,3 +50,7 @@ const programming=["js","rb","py","java","cpp"]
 for(const key in programming){
     console.log(programming[key]);
 }
+
+// for of loop gives values directly
+// for in loop gives index so we gotta fetch the actual value
+// map is not iterable for for in loop
