@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document object model</title>
+</head>
+<body style="background-color: #212121;color:aliceblue">
+    <ul class="languages">
+        <li>javascript</li>
+
+    </ul>
+</body>
+<script>
+    function addlang(langname){
+        const li=document.createElement('li');
+        li.innerHTML=`${langname}`;
+        document.querySelector('.languages').appendChild(li)
+        
+    }
+    addlang("python");
+    addlang("typescript");
+
+    // edit the value
+    const secondlang=document.querySelector("li:nth-child(2)");
+    secondlang.innerHTML="Mojo";
+    // remove
+    const lastlang=document.querySelector("li:last-child");
+    lastlang.remove()
+</script>
+</html>
